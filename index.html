@@ -7,40 +7,39 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-	<div class="logo_banner">
+<!--Header content-->
+	<header>
 		<div class="container">
 			<div class="logo">
-				<img src="./resources/images/ic-logo.svg">
+				<img src="./resources/images/ic-logo.svg" alt="company logo">
 				<span id="first_half">COLMAR</span><span id="second_half">ACADEMY</span>
 			</div>
-<!--Menu with text for computer display-->
-			<div class="menu">
-				<nav>
-					<ul>
-						<li><a href="#campus">On campus</a></li>
-						<li><a href="#">Online</a></li>
-						<li><a href="#">For companies</a></li>
-						<li><a href="#">Sign in</a></li>
-					</ul>
-				</nav>
-			</div>
-<!--Menu with icons only for Smartphone display-->
-			<div class="mobile_nav">
-				<a href="#"><img src="./resources/images/ic-logo.svg"></a>
-				<a href="#"><img src="./resources/images/ic-on-campus.svg"></a>
-				<a href="#"><img src="./resources/images/ic-online.svg"></a>
-				<a href="#"><img src="./resources/images/ic-login.svg"></a>
-			</div>
+		<!--Menu with text for computer display-->
+			<nav class="menu">
+				<ul role=presentation>
+					<li><a href="#campus">On campus</a></li>
+					<li><a href="#">Online</a></li>
+					<li><a href="#">For companies</a></li>
+					<li><a href="#">Sign in</a></li>
+				</ul>
+			</nav>
+		<!--Menu with icons only for Smartphone display-->
+			<nav class="mobile_nav">
+				<a href="#"><img src="./resources/images/ic-logo.svg" alt=""></a>
+				<a href="#"><img src="./resources/images/ic-on-campus.svg" alt=""></a>
+				<a href="#"><img src="./resources/images/ic-online.svg" alt=""></a>
+				<a href="#"><img src="./resources/images/ic-login.svg" alt=""></a>
+			</nav>
 		</div>
-	</div>
+	</header>
 <!--Main banner-->
 	<div class="main_banner">
 		<div class="container">
 			<div class="content_left">
-				<img src="./resources/images/banner.jpg">
+				<img src="./resources/images/banner.jpg" alt="reading people">
 			</div>
 			<div class="content_right">
-				<div class="banner_text">
+				<div class="banner_text" role=presentation>
 					<h1>Learn something new everyday</h1>
 					<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
 					<h5><a href="#">Start here</a></h5>
@@ -48,11 +47,12 @@
 			</div>
 		</div>
 	</div>
+<!--Campus informations-->
 	<div id="campus">
 		<div class="container">
 			<div class="content_left">
-				<img src="./resources/images/information-main.jpg">
-				<div class="description">
+				<img src="./resources/images/information-main.jpg" alt="man reading a book">
+				<div class="description" role=presentation>
 					<h1>It doesn't hurt to keep practicing</h1>
 					<h5>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</h5>
 					<h6>Emanuel, Sr Strategist at Hiring.com</h6>
@@ -61,12 +61,12 @@
 			<div class="content_right">
 				<div class="article">
 					<div class="small_picture">
-						<img src="./resources/images/information-orientation.jpg">
+						<img src="./resources/images/information-orientation.jpg" alt="walking people">
 					</div>
 					<div class="small_picture_mobile">
-						<img src="./resources/images/information-orientation-mobile.jpg">
+						<img src="./resources/images/information-orientation-mobile.jpg" alt="walking people">
 					</div>
-					<div class="description">
+					<div class="description" role=presentation>
 						<h3>Orientation date</h3>
 						<h5>Tue 10/11 & Wed 10/12: 8am-3pm</h5>
 						<h6><a href="#">Read more</a></h6>
@@ -74,12 +74,12 @@
 				</div>
 				<div class="article">
 					<div class="small_picture">
-						<img src="./resources/images/information-campus.jpg">
+						<img src="./resources/images/information-campus.jpg" alt="people in library">
 					</div>
 					<div class="small_picture_mobile">
-						<img src="./resources/images/information-campus-mobile.jpg">
+						<img src="./resources/images/information-campus-mobile.jpg" alt="people in library">
 					</div>
-					<div class="description">
+					<div class="description" role=presentation>
 						<h3>Our campus</h3>
 						<h5>Find which campus is close by you</h5>
 						<h6><a href="#">Read more</a></h6>
@@ -87,12 +87,12 @@
 				</div>
 				<div class="article">
 					<div class="small_picture">
-						<img src="./resources/images/information-guest-lecture.jpg">
+						<img src="./resources/images/information-guest-lecture.jpg" alt="Oliver Sack">
 					</div>
 					<div class="small_picture_mobile">
-						<img src="./resources/images/information-guest-lecture-mobile.jpg">
+						<img src="./resources/images/information-guest-lecture-mobile.jpg" alt="Oliver Sack">
 					</div>
-					<div class="description">
+					<div class="description" role=presentation>
 						<h3>Our guest lecturer</h3>
 						<h5>Join a keynote with Oliver Sack about music in medical treatment</h5>
 						<h6><a href="#">Read more</a></h6>
@@ -101,18 +101,19 @@
 			</div>
 		</div>
 	</div>
+<!--List of courses provided-->
 	<div id="courses">
 		<div class="container">
 			<div class="title">
 				<h1>Start learning</h1>
 			</div>
-<!--List of courses for Computer display-->
+		<!--List of courses for Computer display-->
 			<div class="catalog">
 				<div class="course software_engineering">
 					<div class="medium_picture">
-						<img src="./resources/images/course-software.jpg">
+						<img src="./resources/images/course-software.jpg" alt="desk with computer">
 					</div>
-					<div class="description">
+					<div class="description" role=presentation>
 						<h3>Software engineering</h3>
 						<h5>COURSES</h5>
 						<h5>Web Development, Mobile Development, iOT, APIs</h5>
@@ -120,9 +121,9 @@
 				</div>
 				<div class="course computer_art">
 					<div class="medium_picture">
-						<img src="./resources/images/course-computer-art.jpg">
+						<img src="./resources/images/course-computer-art.jpg" alt="hand holding smartphone">
 					</div>
-					<div class="description">
+					<div class="description" role=presentation>
 						<h3>Computer art</h3>
 						<h5>COURSES</h5>
 						<h5>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</h5>
@@ -130,9 +131,9 @@
 				</div>
 				<div class="course design">
 					<div class="medium_picture">
-						<img src="./resources/images/course-design.jpg">
+						<img src="./resources/images/course-design.jpg" alt="person holding camera">
 					</div>
-					<div class="description">
+					<div class="description" role=presentation>
 						<h3>Design</h3>
 						<h5>COURSES</h5>
 						<h5>User Experience Design, User Research, Visual Design</h5>
@@ -140,9 +141,9 @@
 				</div>
 				<div class="course data">
 					<div class="medium_picture">
-						<img src="./resources/images/course-data.jpg">
+						<img src="./resources/images/course-data.jpg" alt="laptop">
 					</div>
-					<div class="description">
+					<div class="description" role=presentation>
 						<h3>Data</h3>
 						<h5>COURSES</h5>
 						<h5>Data Science, Big Data, SQL, Data Visualization</h5>
@@ -150,9 +151,9 @@
 				</div>
 				<div class="course business">
 					<div class="medium_picture">
-						<img src="./resources/images/course-business.jpg">
+						<img src="./resources/images/course-business.jpg" alt="chessboard">
 					</div>
-					<div class="description">
+					<div class="description" role=presentation>
 						<h3>Business</h3>
 						<h5>COURSES</h5>
 						<h5>Product Development, Business Development, Startup</h5>
@@ -160,19 +161,19 @@
 				</div>
 				<div class="course marketing">
 					<div class="medium_picture">
-						<img src="./resources/images/course-marketing.jpg">
+						<img src="./resources/images/course-marketing.jpg" alt="smartwatch">
 					</div>
-					<div class="description">
+					<div class="description" role=presentation>
 						<h3>Marketing</h3>
 						<h5>COURSES</h5>
 						<h5>Analytics, Content Marketing, Mobile Marketing</h5>
 					</div>
 				</div>
 			</div>
-<!--List of courses for Smartphone display-->
+		<!--List of courses for Smartphone display-->
 			<div class="catalog_mobile">
-				<nav class="course_name">
-					<ul>
+				<nav>
+					<ul role=presentation>
 						<li><a href="#">Software Engineering</a></li>
 						<li><a href="#">Computer Art</a></li>
 						<li><a href="#">Design</a></li>
@@ -194,8 +195,8 @@
 				<div class="content_left">
 					<video autoplay loop controls>
 						<source src="./resources/videos/thesis.mp4" type="video/mp4">
-						</video>
-					<div class="description">
+						Your browser does not support the video tag.</video>
+					<div class="description" role=presentation>
 						<h3>Reimagine urban</h3>
 						<h5>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</h5>
 					</div>
@@ -203,18 +204,18 @@
 				<div class="content_right">
 					<div class="article">
 						<div class="small_picture">
-						<img src="./resources/images/thesis-fisma.jpg">
+						<img src="./resources/images/thesis-fisma.jpg" alt="">
 						</div>
-						<div class="description">
+						<div class="description" role=presentation>
 							<h3>Fisma: Design and Prototype</h3>
 							<h5>Designer showcase of new prototype product</h5>
 						</div>
 					</div>
 					<div class="article">
 						<div class="small_picture">
-						<img src="./resources/images/thesis-now-and-then.jpg">
+						<img src="./resources/images/thesis-now-and-then.jpg" alt="">
 						</div>
-						<div class="description">
+						<div class="description" role=presentation>
 							<h3>Now and then</h3>
 							<h5>Research study about New York</h5>
 						</div>
@@ -223,13 +224,14 @@
 			</div>
 		</div>
 	</div>
+<!--Footer Content-->
 	<footer>
 		<div class="container">
 			<div id="copy">
 				<span>&copy; 2016 Colmar Academy. All rights reserved</span>
 			</div>
 			<nav>
-				<ul>
+				<ul role=presentation>
 					<li><a href="#">Terms</a></li>
 					<li><a href="#">Privacy</a></li>
 				</ul>
